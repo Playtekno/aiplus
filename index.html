@@ -59,6 +59,34 @@
 <meta property="snapchat:sticker" content="https://aiplus.pages.dev/aiplus.webp"/>
 	<link rel="shortcut icon" href="favicon.ico">
 	<link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+	<style>
+/* CSS untuk navbar */
+		.navbar {
+			background: linear-gradient(135deg, #FFDAB9, #FFA500); /* Gradient warna orange pastel */
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		.navbar li {
+			margin-left: 20px;
+		}
+
+		.navbar a {
+			color: #000;
+			text-decoration: none;
+		}
+
+		
+</style>
 <script>
 // Membuat elemen meta baru
 var metaTag = document.createElement('meta');
@@ -146,6 +174,15 @@ tag.onload = function(){
 </script>
 </head>
 <body class="w-full bg-gray-100">
+	<nav class="navbar">
+		<ul>
+			<li><a href="https://aiplus.pages.dev/">Home</a></li>
+			<li><a href="https://aiplus.pages.dev/kebijakan-privasi">Kebijakan Privasi</a></li>
+			<li><a href="https://aiplus.pages.dev/disclaimer">Disclaimer</a></li>
+			<li><a href="https://aiplus.pages.dev/tentang-kami">Tentang Kami</a></li>
+		</ul>
+		</div>
+	</nav>
     <header class="w-full mt-36 mb-10 text-center" id="site-header">
         <h1 class="mx-auto relative max-w-max w-full font-bold text-5xl tracking-wider lg:text-7xl lg:tracking-widest xl:text-8xl">
             <span class="rainbow border-b-4 border-b-orange-200"><i class="fa-solid fa-robot"></i>AIPlus+</span>
