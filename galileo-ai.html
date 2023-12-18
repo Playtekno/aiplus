@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
+
 <head>
 <script>
     window.dataLayer = window.dataLayer || [];
@@ -51,77 +52,100 @@
 <meta property="og:image" content="https://aiplus.pages.dev/galileo-ai-image.png"/>
 <meta name="twitter:image" content="https://aiplus.pages.dev/galileo-ai-image.png"/>
 <meta property="snapchat:sticker" content="https://aiplus.pages.dev/galileo-ai-image.png"/>
-		<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <style>
     body {
-      font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; /* Mengatur konten berada di bagian atas */
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
     }
-.main {
-  width: 100%;
-  max-width: 100%;
-}
-
-@media (min-width: 640px) {
-  .main {
-    width: 5/6;
-  }
-}
-
-.bg-white {
-  background-color: #ffffff;
-}
-
-.rounded-xl {
-  border-radius: 0.75rem;
-}
-
-.mt-28 {
-  margin-top: 7rem;
-}
-
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.shadow-lg {
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-}
-	  /* CSS untuk navbar */
-		.navbar {
-			background: linear-gradient(135deg, #FFDAB9, #FFA500); /* Gradient warna orange pastel */
-			padding: 10px;
-			display: flex;
-			justify-content: space-between;
-			align-items: center;
-		}
-
-		.navbar ul {
-			list-style-type: none;
-			margin: 0;
-			padding: 0;
-			display: flex;
-		}
-
-		.navbar li {
-			margin-left: 20px;
-		}
-
-		.navbar a {
-			color: #000;
-			text-decoration: none;
-		}
-	</style>
-	<script type="application/ld+json">
+    
+    .navbar {
+      margin-bottom: 20px;
+	  width: 100%;
+background-color: #333;
+  color: #fff;
+    }
+    
+    .article {
+      width: 100%;
+      max-width: 800px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: left;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      text-align: justify;
+      margin-bottom: 10px;
+    }
+    
+    .author-section {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .author-profile {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 10px;
+    }
+    
+    .author-profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .author-info {
+      font-weight: bold;
+    }
+    
+    .author-bio {
+      margin-top: 10px;
+    }
+    
+    .share-icons {
+      margin-top: 20px;
+	  color: #dc3545;
+    }
+    
+    .share-icons a {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    
+    .fa-lg {
+      font-size: 50px;
+	  color: #dc3545;
+    }
+    
+    @media (max-width: 576px) {
+     .article {
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      text-align: left;
+    }
+  </style>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Article",
@@ -138,29 +162,35 @@
   </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Apa saja fitur Galileo AI?","acceptedAnswer":{"@type":"Answer","text":"Galileo AI memiliki berbagai fitur yang dapat membantu Anda membuat desain UI yang menarik dan profesional, antara lain:\n\n    Akses ke berbagai komponen UI, seperti tombol, ikon, dan teks.\n    Kemampuan untuk menyesuaikan desain UI sesuai kebutuhan.\n    Kemampuan untuk menyimpan dan berbagi desain UI."}},{"@type":"Question","name":"Apakah Galileo AI cocok untuk pemula?","acceptedAnswer":{"@type":"Answer","text":"Ya, Galileo AI cocok untuk pemula. Platform ini memiliki antarmuka yang mudah digunakan dan dilengkapi dengan tutorial yang dapat membantu Anda mempelajari cara menggunakannya."}},{"@type":"Question","name":"Berapa biaya penggunaan Galileo AI?","acceptedAnswer":{"@type":"Answer","text":"Galileo AI menawarkan dua opsi harga, yaitu:\n\n    Versi gratis: Anda dapat menggunakan Galileo AI secara gratis untuk membuat desain UI dengan jumlah terbatas.\n    Versi berbayar: Anda dapat menggunakan Galileo AI tanpa batasan jumlah desain dan mendapatkan akses ke fitur-fitur premium."}},{"@type":"Question","name":"UI Apa Saja Yang Bisa Dibuat Oleh Galileo AI?","acceptedAnswer":{"@type":"Answer","text":"Galileo AI dapat membuat berbagai macam UI, mulai dari UI untuk situs web, aplikasi seluler, hingga game. Berikut adalah beberapa contoh UI yang dapat dibuat oleh Galileo AI:\n\n    UI untuk situs web: Galileo AI dapat membuat UI untuk berbagai jenis situs web, seperti situs web bisnis, situs web e-commerce, dan situs web media sosial.\n    UI untuk aplikasi seluler: Galileo AI dapat membuat UI untuk berbagai jenis aplikasi seluler, seperti aplikasi game, aplikasi media sosial, dan aplikasi produktivitas.\n    UI untuk game: Galileo AI dapat membuat UI untuk berbagai jenis game, seperti game petualangan, game aksi, dan game strategi."}},{"@type":"Question","name":"Apakah Kita Mendapat Source Code UI nya? ","acceptedAnswer":{"@type":"Answer","text":"Tidak, Anda tidak akan mendapatkan source code UI yang dibuat oleh Galileo AI. Galileo AI hanya akan menghasilkan desain UI dalam bentuk gambar atau kode HTML/CSS. Jika Anda ingin mendapatkan source code UI tersebut, Anda perlu mengeditnya sendiri atau menggunakan layanan pihak ketiga untuk mengonversinya ke dalam format yang Anda inginkan."}},{"@type":"Question","name":"Bagaimana Cara Paling Gampang Mengkonversi Desain UI Hasil Galileo AI ke Source Code?","acceptedAnswer":{"@type":"Answer","text":"Cara paling gampang untuk mengonversi desain UI hasil Galileo AI ke source code adalah dengan menggunakan layanan pihak ketiga. Layanan pihak ketiga ini akan otomatis mengonversi desain UI ke dalam format source code yang Anda inginkan.\n\nSalah satu layanan pihak ketiga yang dapat Anda gunakan adalah Figma. Figma adalah platform desain UI yang populer yang menawarkan fitur untuk mengonversi desain UI ke dalam berbagai format, termasuk format source code."}},{"@type":"Question","name":"","acceptedAnswer":{"@type":"Answer","text":""}}]}</script>
 </head>
-<body class="w-full bg-gray-100">
-	<nav class="navbar">
-		<ul>
-			<li><a href="https://aiplus.pages.dev/">Home</a></li>
-			<li><a href="https://aiplus.pages.dev/kebijakan-privasi">Kebijakan Privasi</a></li>
-			<li><a href="https://aiplus.pages.dev/disclaimer">Disclaimer</a></li>
-			<li><a href="https://aiplus.pages.dev/tentang-kami">Tentang Kami</a></li>
-		</ul>
-		</div>
-	</nav>
-    <header class="w-full mt-36 mb-10 text-center" id="site-header">
-        <h1 class="mx-auto relative max-w-max w-full font-bold text-5xl tracking-wider lg:text-7xl lg:tracking-widest xl:text-8xl">
-            <span class="rainbow border-b-4 border-b-orange-200"><a href="/" rel="noopener noreferrer">AIPlus+</span></a>
-        </h1>
-        <p class="mt-6 tracking-wider text-lg lg:text-xl xl:text-2xl">Berita AI Terupdate</p>
-    </header>
-    <section class="w-max max-w-full bg-red-100 mx-auto py-3 px-6 rounded-lg text-gray-700 my-16 font-thin">
-<span class="mx-auto text-center block text-4xl font-bold tracking-wide hover:scale-125 hover:-rotate-1 transition-transform rainbow">
-                    <h1>Galileo AI: AI Text to UI Desain dengan Mudah dan Cepat</h1>
-                </span>
-    </section>
-    <main class="w-5/6 bg-white rounded-xl mt-28 mb-10 mx-auto p-10 shadow-lg">
-<<p style="text-align: center;"><span style="font-family: Roboto;">&nbsp;</span></p><div class="separator" style="clear: both; text-align: center;"><img alt="Galileo AI" border="0" data-original-height="630" data-original-width="1200" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxu1VYfMHoexeCz_joqkr0U30DzPQ6FCj2rj1TrXmYLaqkARy0M5llGjXGZcXPGB6_XoyPh7zBzzRtE_JbwzuevkxXjpFb5Bi0iOMflD3G77pDt7_2AAN0OPCQfEUevXLA264dl2DnxulBuU48j7j66m9nz0CBrwNSSWgEbyigOws8vrpLVtd_y0H-hi8j/s16000/galileo-ai.png" title="Galileo AI" /></div><p></p><p><span style="font-family: Roboto;">Galileo AI adalah platform generative AI text to UI yang membantu Anda membuat desain UI yang menarik dan profesional dengan mudah dan cepat.</span></p><p data-sourcepos="15:1-15:223"><span style="font-family: Roboto;">Halo, teman-teman! Apakah kalian suka mendesain UI? Jika iya, maka kalian pasti tahu betapa sulitnya untuk membuat desain UI yang menarik dan profesional. Apalagi jika kalian tidak memiliki keterampilan desain yang mumpuni.</span></p><p data-sourcepos="17:1-17:253"><span style="font-family: Roboto;">Namun, sekarang ada solusi yang bisa membantu kalian membuat desain UI yang keren, yaitu Galileo AI. Galileo AI adalah platform generative AI text to UI yang menggunakan kecerdasan buatan untuk menghasilkan desain UI yang sesuai dengan kebutuhan kalian.</span></p><p data-sourcepos="21:1-21:23"><strong style="font-family: Roboto;">Apa itu Galileo AI?</strong></p><p data-sourcepos="23:1-23:236"><span style="font-family: Roboto;">Galileo AI adalah platform generative AI text to UI yang dikembangkan oleh AI Plus. Platform ini menggunakan kecerdasan buatan untuk menghasilkan desain UI yang menarik dan profesional berdasarkan instruksi yang diberikan oleh pengguna.</span></p><p data-sourcepos="25:1-25:42"><strong style="font-family: Roboto;">Bagaimana cara menggunakan Galileo AI?</strong></p><p data-sourcepos="27:1-27:75"><span style="font-family: Roboto;">Untuk menggunakan Galileo AI, Anda cukup mengikuti langkah-langkah berikut:</span></p><ol data-sourcepos="29:1-34:0"><li data-sourcepos="29:1-29:37"><span style="font-family: Roboto;"><strong>Kunjungi situs web Galileo AI: </strong><b>https://www.usegalileo.ai</b><strong></strong></span></li><li data-sourcepos="30:1-30:76"><strong style="font-family: Roboto;">Buat akun baru atau masuk menggunakan akun Google atau Facebook Anda.</strong></li><li data-sourcepos="31:1-31:27"><strong style="font-family: Roboto;">Klik tombol "Mulai".</strong></li><li data-sourcepos="32:1-32:55"><strong style="font-family: Roboto;">Masukkan instruksi desain UI yang Anda inginkan.</strong></li><li data-sourcepos="33:1-34:0"><strong style="font-family: Roboto;">Klik tombol "Buat".</strong></li></ol><p data-sourcepos="35:1-35:162"><span style="font-family: Roboto;">Galileo AI akan menghasilkan beberapa desain UI yang sesuai dengan instruksi Anda. Anda dapat memilih desain yang Anda sukai dan menyesuaikannya sesuai kebutuhan.</span></p>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
+    <a class="navbar-brand" href="https://aiplus.pages.dev/"><i class="fa-solid fa-robot"></i></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="https://aiplus.pages.dev/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://aiplus.pages.dev/kebijakan-privasi">Kebijakan Privasi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://aiplus.pages.dev/disclaimer">Disclaimer</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://aiplus.pages.dev/tentang-kami">Tentang AIPlus</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="article">
+<center><h1>Galileo AI: AI Text to UI Desain dengan Mudah dan Cepat</h1></center>
+<p style="text-align: center;"><span style="font-family: Roboto;">&nbsp;</span></p><div class="separator" style="clear: both; text-align: center;"><img alt="Galileo AI" border="0" data-original-height="630" data-original-width="1200" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxu1VYfMHoexeCz_joqkr0U30DzPQ6FCj2rj1TrXmYLaqkARy0M5llGjXGZcXPGB6_XoyPh7zBzzRtE_JbwzuevkxXjpFb5Bi0iOMflD3G77pDt7_2AAN0OPCQfEUevXLA264dl2DnxulBuU48j7j66m9nz0CBrwNSSWgEbyigOws8vrpLVtd_y0H-hi8j/s16000/galileo-ai.png" title="Galileo AI" /></div><p></p><p><span style="font-family: Roboto;">Galileo AI adalah platform generative AI text to UI yang membantu Anda membuat desain UI yang menarik dan profesional dengan mudah dan cepat.</span></p><p data-sourcepos="15:1-15:223"><span style="font-family: Roboto;">Halo, teman-teman! Apakah kalian suka mendesain UI? Jika iya, maka kalian pasti tahu betapa sulitnya untuk membuat desain UI yang menarik dan profesional. Apalagi jika kalian tidak memiliki keterampilan desain yang mumpuni.</span></p><p data-sourcepos="17:1-17:253"><span style="font-family: Roboto;">Namun, sekarang ada solusi yang bisa membantu kalian membuat desain UI yang keren, yaitu Galileo AI. Galileo AI adalah platform generative AI text to UI yang menggunakan kecerdasan buatan untuk menghasilkan desain UI yang sesuai dengan kebutuhan kalian.</span></p><p data-sourcepos="21:1-21:23"><strong style="font-family: Roboto;">Apa itu Galileo AI?</strong></p><p data-sourcepos="23:1-23:236"><span style="font-family: Roboto;">Galileo AI adalah platform generative AI text to UI yang dikembangkan oleh AI Plus. Platform ini menggunakan kecerdasan buatan untuk menghasilkan desain UI yang menarik dan profesional berdasarkan instruksi yang diberikan oleh pengguna.</span></p><p data-sourcepos="25:1-25:42"><strong style="font-family: Roboto;">Bagaimana cara menggunakan Galileo AI?</strong></p><p data-sourcepos="27:1-27:75"><span style="font-family: Roboto;">Untuk menggunakan Galileo AI, Anda cukup mengikuti langkah-langkah berikut:</span></p><ol data-sourcepos="29:1-34:0"><li data-sourcepos="29:1-29:37"><span style="font-family: Roboto;"><strong>Kunjungi situs web Galileo AI: </strong><b>https://www.usegalileo.ai</b><strong></strong></span></li><li data-sourcepos="30:1-30:76"><strong style="font-family: Roboto;">Buat akun baru atau masuk menggunakan akun Google atau Facebook Anda.</strong></li><li data-sourcepos="31:1-31:27"><strong style="font-family: Roboto;">Klik tombol "Mulai".</strong></li><li data-sourcepos="32:1-32:55"><strong style="font-family: Roboto;">Masukkan instruksi desain UI yang Anda inginkan.</strong></li><li data-sourcepos="33:1-34:0"><strong style="font-family: Roboto;">Klik tombol "Buat".</strong></li></ol><p data-sourcepos="35:1-35:162"><span style="font-family: Roboto;">Galileo AI akan menghasilkan beberapa desain UI yang sesuai dengan instruksi Anda. Anda dapat memilih desain yang Anda sukai dan menyesuaikannya sesuai kebutuhan.</span></p>
 <br><h2>F.A.Q. Seputar Galileo AI</h2>
 <p data-sourcepos="39:1-39:33"><strong style="font-family: Roboto;">Q: Apa saja fitur Galileo AI?</strong></p><p data-sourcepos="41:1-41:123"><span style="font-family: Roboto;">A: Galileo AI memiliki berbagai fitur yang dapat membantu Anda membuat desain UI yang menarik dan profesional, antara lain:</span></p><ul data-sourcepos="43:1-46:0"><li data-sourcepos="43:1-43:68"><strong style="font-family: Roboto;">Akses ke berbagai komponen UI, seperti tombol, ikon, dan teks.</strong></li><li data-sourcepos="44:1-44:62"><strong style="font-family: Roboto;">Kemampuan untuk menyesuaikan desain UI sesuai kebutuhan.</strong></li><li data-sourcepos="45:1-46:0"><strong style="font-family: Roboto;">Kemampuan untuk menyimpan dan berbagi desain UI.</strong></li></ul><p data-sourcepos="47:1-47:44"><strong style="font-family: Roboto;">Q: Apakah Galileo AI cocok untuk pemula?</strong></p><p data-sourcepos="49:1-49:179"><span style="font-family: Roboto;">A: Ya, Galileo AI cocok untuk pemula. Platform ini memiliki antarmuka yang mudah digunakan dan dilengkapi dengan tutorial yang dapat membantu Anda mempelajari cara menggunakannya.</span></p><p data-sourcepos="51:1-51:42"><strong style="font-family: Roboto;">Q: Berapa biaya penggunaan Galileo AI?</strong></p><p data-sourcepos="53:1-53:47"><span style="font-family: Roboto;">A: Galileo AI menawarkan dua opsi harga, yaitu:</span></p><ul data-sourcepos="55:1-57:0"><li data-sourcepos="55:1-55:115"><strong style="font-family: Roboto;">Versi gratis: Anda dapat menggunakan Galileo AI secara gratis untuk membuat desain UI dengan jumlah terbatas.</strong></li><li data-sourcepos="56:1-57:0"><strong style="font-family: Roboto;">Versi berbayar: Anda dapat menggunakan Galileo AI tanpa batasan jumlah desain dan mendapatkan akses ke fitur-fitur premium.</strong></li></ul><p data-sourcepos="58:1-58:14"><span style="font-family: Roboto;"><strong>Q: UI Apa Saja Yang Bisa Dibuat Oleh Galileo AI?<br /></strong>A: Galileo AI dapat membuat berbagai macam UI, mulai dari UI untuk situs web, aplikasi seluler, hingga game. Berikut adalah beberapa contoh UI yang dapat dibuat oleh Galileo AI:</span></p><div _ngcontent-ng-c3770091722="" class="markdown markdown-main-panel" dir="ltr" style="--animation-duration: 600ms;"><ul data-sourcepos="3:1-6:0"><li data-sourcepos="3:1-3:161"><span style="font-family: Roboto;"><strong>UI untuk situs web:</strong> 
 Galileo AI dapat membuat UI untuk berbagai jenis situs web, seperti 
@@ -176,24 +206,53 @@ perlu membayar Galileo AI.</span></li><li data-sourcepos="6:1-7:0"><span style="
 bahkan bagi pemula. Jika pengguna harus mengedit source code UI, maka 
 hal ini akan membuat Galileo AI menjadi lebih kompleks dan sulit 
 digunakan.</span></li></ul><p data-sourcepos="8:1-8:395"><span style="font-family: Roboto;">Meskipun tidak mendapatkan source code UI, Anda masih dapat menyesuaikan desain UI yang dihasilkan oleh Galileo AI sesuai kebutuhan Anda. Anda dapat mengubah warna, ukuran, dan posisi elemen UI, serta menambahkan atau menghapus elemen UI. Anda juga dapat menggunakan layanan pihak ketiga untuk mengonversi desain UI ke dalam format yang Anda inginkan, seperti format SVG, PNG, atau React Native.</span></p><p data-sourcepos="10:1-10:132"><span style="font-family: Roboto;">Berikut adalah beberapa layanan pihak ketiga yang dapat Anda gunakan untuk mengonversi desain UI ke dalam format yang Anda inginkan:</span></p><ul data-sourcepos="12:1-17:0"><li data-sourcepos="12:1-12:11"><strong style="font-family: Roboto;">Figma</strong></li><li data-sourcepos="13:1-13:12"><strong style="font-family: Roboto;">Sketch</strong></li><li data-sourcepos="14:1-14:14"><strong style="font-family: Roboto;">Adobe XD</strong></li><li data-sourcepos="15:1-15:12"><strong style="font-family: Roboto;">Framer</strong></li><li data-sourcepos="16:1-17:0"><strong style="font-family: Roboto;">React Native</strong></li></ul><p data-sourcepos="18:1-18:157"><span style="font-family: Roboto;">Dengan menggunakan layanan pihak ketiga tersebut, Anda dapat membuat desain UI yang sesuai dengan kebutuhan Anda dan dapat digunakan untuk berbagai platform.</span></p><p data-sourcepos="18:1-18:157"><span style="font-family: Roboto;"><b>Q: Bagaimana Cara Paling Gampang Mengkonversi Desain UI Hasil Galileo AI ke Source Code?</b><br />A: Cara paling gampang untuk mengonversi desain UI hasil Galileo AI ke source code adalah dengan menggunakan layanan pihak ketiga. Layanan pihak ketiga ini akan otomatis mengonversi desain UI ke dalam format source code yang Anda inginkan.</span></p><div _ngcontent-ng-c3770091722="" class="markdown markdown-main-panel" dir="ltr" style="--animation-duration: 600ms;"><p data-sourcepos="3:1-3:223"><span style="font-family: Roboto;">Salah satu layanan pihak ketiga yang dapat Anda gunakan adalah <strong>Figma</strong>. Figma adalah platform desain UI yang populer yang menawarkan fitur untuk mengonversi desain UI ke dalam berbagai format, termasuk format source code.</span></p><p data-sourcepos="5:1-5:109"><span style="font-family: Roboto;">Berikut adalah langkah-langkah untuk mengonversi desain UI hasil Galileo AI ke source code menggunakan Figma:</span></p><ol data-sourcepos="7:1-13:0"><li data-sourcepos="7:1-7:73"><span style="font-family: Roboto;">Buat akun Figma atau masuk menggunakan akun Google atau Facebook Anda.</span></li><li data-sourcepos="8:1-8:46"><span style="font-family: Roboto;">Import desain UI hasil Galileo AI ke Figma.</span></li><li data-sourcepos="9:1-9:26"><span style="font-family: Roboto;">Klik tombol <strong>Export</strong>.</span></li><li data-sourcepos="10:1-10:32"><span style="font-family: Roboto;">Pilih format <strong>Source Code</strong>.</span></li><li data-sourcepos="11:1-11:47"><span style="font-family: Roboto;">Pilih bahasa pemrograman yang Anda inginkan.</span></li><li data-sourcepos="12:1-13:0"><span style="font-family: Roboto;">Klik tombol <strong>Export</strong>.</span></li></ol><p data-sourcepos="14:1-14:179"><span style="font-family: Roboto;">Figma akan mengonversi desain UI Anda ke dalam format source code yang Anda pilih. Source code tersebut akan berisi semua elemen UI yang ada pada desain Anda, beserta propertinya.</span></p><p data-sourcepos="16:1-16:192"><span style="font-family: Roboto;">Selain Figma, Anda juga dapat menggunakan layanan pihak ketiga lainnya untuk mengonversi desain UI hasil Galileo AI ke source code. Layanan pihak ketiga lainnya yang dapat Anda gunakan adalah:</span></p><ul data-sourcepos="18:1-22:0"><li data-sourcepos="18:1-18:12"><strong style="font-family: Roboto;">Sketch</strong></li><li data-sourcepos="19:1-19:14"><strong style="font-family: Roboto;">Adobe XD</strong></li><li data-sourcepos="20:1-20:12"><strong style="font-family: Roboto;">Framer</strong></li><li data-sourcepos="21:1-22:0"><strong style="font-family: Roboto;">React Native</strong></li></ul><p data-sourcepos="23:1-23:161"><span style="font-family: Roboto;">Masing-masing layanan pihak ketiga memiliki kelebihan dan kekurangannya masing-masing. Anda dapat memilih layanan pihak ketiga yang sesuai dengan kebutuhan Anda.</span></p><p data-sourcepos="25:1-25:89"><span style="font-family: Roboto;">Berikut adalah beberapa tips untuk mengonversi desain UI hasil Galileo AI ke source code:</span></p><ul data-sourcepos="27:1-29:124"><li data-sourcepos="27:1-27:73"><span style="font-family: Roboto;">Pastikan desain UI Anda sudah lengkap dan sesuai dengan kebutuhan Anda.</span></li><li data-sourcepos="28:1-28:74"><span style="font-family: Roboto;">Pilih format source code yang sesuai dengan platform yang Anda inginkan.</span></li><li data-sourcepos="29:1-29:124"><span style="font-family: Roboto;">Periksa kembali source code yang dihasilkan untuk memastikan bahwa semua elemen UI sudah sesuai dengan yang Anda inginkan.</span></li></ul></div></div></div><p data-sourcepos="58:1-58:14"><strong style="font-family: Roboto;">Kesimpulan</strong></p><p data-sourcepos="60:1-60:263"><span style="font-family: Roboto;">Galileo AI adalah platform generative AI text to UI yang sangat powerful dan mudah digunakan. Platform ini dapat membantu Anda membuat desain UI yang menarik dan profesional dengan cepat dan mudah, bahkan jika Anda tidak memiliki keterampilan desain yang mumpuni.</span></p><p data-sourcepos="62:1-62:11"><strong style="font-family: Roboto;">Penutup</strong></p><span style="font-family: Roboto;">Nah, itulah artikel tentang Galileo AI. Semoga artikel ini bermanfaat bagi Anda. Jika Anda tertarik untuk mencoba Galileo AI, Anda dapat mengunjungi situs webnya di : https://www.usegalileo.ai<br /></span><p><span style="font-family: Roboto;">&nbsp;</span></p>
-            </section>
-        </section>
-    </main>
-<footer class="mb-10 text-gray-800 text-center text-xs lg:text-base">        Copyright &copy; 2023 AIPlus
-    <center><!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
-<!-- Histats.com  START  (aync)-->
-<script type="text/javascript">var _Hasync= _Hasync|| [];
-_Hasync.push(['Histats.startgif', '1,4830909,4,8001,"undefined"']);
-_Hasync.push(['Histats.fasi', '1']);
-_Hasync.push(['Histats.track_hits', '']);
-(function() {
-var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
-hs.src = ('//s10.histats.com/js15_gif_as.js');
-(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
-})();</script>
-<noscript><a href="/" alt="web statistics" target="_blank" ><div id="histatsC"><img border="0" src="//s4is.histats.com/8001.gif?4830909&103"></div></a>
-</noscript>
-<!-- Histats.com  END  --></center></footer>
     
-<!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1e78c04a44b0421a9367ea263a31b92f"}'></script><!-- Cloudflare Pages Analytics --></body>
+    <div class="author-section">
+      <div class="author-profile">
+        <img src="author.webp" alt="Foto Profil Penulis">
+      </div>
+      <div class="author-info">
+        <div>Author: AIPlus</div>
+     </div>
+    </div>
+    
+    <center><div class="share-icons">
+	Bagikan artikel ini<br><br>
+      <a href="#" onclick="shareToFacebook()"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#" onclick="shareToWhatsApp()"><i class="fab fa-whatsapp fa-lg"></i></a>
+      <a href="#" onclick="shareToTelegram()"><i class="fab fa-telegram fa-lg"></i></a>
+      <a href="#" onclick="shareToTwitter()"><i class="fab fa-twitter fa-lg"></i></a>
+	  </center>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function shareToFacebook() {
+      var url = encodeURIComponent(window.location.href);
+      var shareUrl = 'https://www.facebook.com/sharer.php?u=' + url;
+      window.open(shareUrl, '_blank');
+    }
+    
+    function shareToWhatsApp() {
+      var url = encodeURIComponent(window.location.href);
+      var shareUrl = 'https://api.whatsapp.com/send?text=' +url;
+      window.open(shareUrl, '_blank');
+    }
+    
+    function shareToTelegram() {
+      var url = encodeURIComponent(window.location.href);
+      var shareUrl = 'https://telegram.me/share/url?url=' + url;
+      window.open(shareUrl, '_blank');
+    }
+    
+    function shareToTwitter() {
+      var url = encodeURIComponent(window.location.href);
+      var shareUrl = 'https://twitter.com/intent/tweet?url=' + url;
+      window.open(shareUrl, '_blank');
+    }
+  </script>
+</body>
+
 </html>
