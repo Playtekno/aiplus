@@ -14,6 +14,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="dns-prefetch" href="//aiplus.pages.dev">
+<link rel="dns-prefetch" href="//site-assets.fontawesome.com">
+<link rel="dns-prefetch" href="//lf9-cdn-tos.bytecdntp.com">
+<link rel="dns-prefetch" href="//raw.githubusercontent.com">
+<link rel="preconnect" href="//github.githubassets.com" crossorigin>
+<link rel="preconnect" href="//avatars.githubusercontent.com">
     <link rel="stylesheet" href="style.css">
     <title>Kebijakan Privasi - AIPlus.pages.dev</title>
 	<link rel="canonical" href="https://aiplus.pages.dev/"/>
@@ -235,41 +241,40 @@ tag.onload = function(){
     </main>
     <footer class="mb-10 text-gray-400 text-center text-xs lg:text-base">
         Copyright &copy; 2023 AIPlus
-    </footer>
-    <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-3-M/axios/0.26.0/axios.min.js"></script>
-    <script>
-        // Star Count
-        axios.get('https://api.github.com/repos/Jiaocz/CloudFlare-Pages-UrlShorten').then(res => document.getElementById('star-count').innerText = res.data.stargazers_count);
-        document.getElementById('star-badge').addEventListener('click', () => { window.open("https://github.com/Jiaocz/CloudFlare-Pages-UrlShorten", '_blank', 'noopener,noreferrer'); });
-        // Gravatar 镜像
-        document.getElementById('this-site-gravatar-origin').innerText = `${window.location.origin}/avatar/`;
-        // 头像
-        document.getElementById('gravatar-img-link').innerText
-          = document.getElementById('gravatar-img-link').href
-          = `${window.location.origin}/avatar/02e96d02a7364a53f44168f4beb7067c?s=128`;
-        const emailChangedHandler = async () => {
-            const origin = window.location.origin;
-            const email = document.getElementById('avatar-email').value;
-            if (!email) return;
-            const img = document.getElementById('gravatar-mirror-img');
-            const url = document.getElementById('gravatar-img-link');
-            const hash = await axios.get(`/api/md5/${email}`);
-            img.src = `${origin}/avatar/${hash.data}?s=128`;
-            url.innerText = url.href = `${origin}/avatar/${hash.data}?s=128`;
-        }
-        document.getElementById('avatar-email').addEventListener('blur', emailChangedHandler);
-        // gh
-        document.getElementById('this-site-gh-origin').innerText = `${window.location.origin}/gh/`;
-        const ghGo = () => {
-            const input = document.getElementById('gh-mirror-input');
-            const url = input.value;
-            if (url) {
-                window.open(`${window.location.origin}/gh/${url}`);
-            } else {
-                alert('请输入链接');
-            }
-        }
-        document.getElementById('gh-mirror-btn').addEventListener('click', ghGo);
-    </script>
+    <center><!-- Histats.com  (div with counter) --><div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.startgif', '1,4830909,4,8001,"undefined"']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_gif_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" alt="web statistics" target="_blank" ><div id="histatsC"><img border="0" src="//s4is.histats.com/8001.gif?4830909&103"></div></a>
+</noscript>
+<!-- Histats.com  END  --></center></footer>
+ <script>
+ // Mendapatkan elemen-elemen gambar dengan ekstensi .webp dan .png
+var images = document.querySelectorAll('img[src$=".webp"], img[src$=".png"], , img[src$=".ico"]');
+
+// Membuat objek Date untuk mendapatkan tanggal saat ini
+var currentDate = new Date();
+
+// Mengubah format tanggal menjadi "dd-mm-yyyy"
+var formattedDates = currentDate.getDate() + '-' + (currentDate.getMonth() + 1) + '-' + currentDate.getFullYear();
+
+// Iterasi melalui elemen-elemen gambar
+for (var i = 0; i < images.length; i++) {
+  var imageSrc = images[i].getAttribute('src');
+  
+  // Menambahkan tag ?v=dd-mm-yyyy pada URL gambar
+  var updatedImageSrc = imageSrc + '?v=' + formattedDates;
+  
+  // Mengganti src gambar dengan URL yang telah diperbarui
+  images[i].setAttribute('src', updatedImageSrc);
+}
+</script>   
 <!-- Cloudflare Pages Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "1e78c04a44b0421a9367ea263a31b92f"}'></script><!-- Cloudflare Pages Analytics --></body>
 </html>
