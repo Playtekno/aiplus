@@ -251,10 +251,35 @@ tag.onload = function(){
           <h1 class="card-title">Google Gemini Vs GPT-4</a></h1>
 	<p class="card-text"></p>
         </div>      </div>
-  <script async src="https://goodrive.xyz/https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script async src="https://goodrive.xyz/https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script async src="https://goodrive.xyz/https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  
+  <script async src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script async src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+function deferResource(url, type) {
+  var tag;
+
+  if (type === 'script') {
+    tag = document.createElement('script');
+    tag.src = url;
+    tag.setAttribute('defer', true);
+  } else if (type === 'style') {
+    tag = document.createElement('link');
+    tag.href = url;
+    tag.rel = 'stylesheet';
+  }
+
+  if (tag) {
+    document.head.appendChild(tag);
+  }
+}
+
+// Panggil fungsi deferResource untuk menunda pemuatan sumber daya
+deferResource('https://code.jquery.com/jquery-3.5.1.slim.min.js', 'script');
+deferResource('https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js', 'script');
+deferResource('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', 'script');
+deferResource('https://aiplus.pages.dev/bootstrap.min.css', 'style');
+deferResource('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css', 'style');
+  </script>
   <script>
     function search() {
       var input = document.getElementById('searchInput').value.toLowerCase();
