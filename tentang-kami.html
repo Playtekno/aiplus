@@ -96,6 +96,30 @@
 .shadow-lg {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
+	  /* CSS untuk navbar */
+		.navbar {
+			background: linear-gradient(135deg, #FFDAB9, #FFA500); /* Gradient warna orange pastel */
+			padding: 10px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.navbar ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		.navbar li {
+			margin-left: 20px;
+		}
+
+		.navbar a {
+			color: #000;
+			text-decoration: none;
+		}
 	</style>
 	<script>
 // Membuat elemen meta baru
@@ -184,6 +208,15 @@ tag.onload = function(){
 </script>
 </head>
 <body class="w-full bg-gray-100">
+	<nav class="navbar">
+		<ul>
+			<li><a href="https://aiplus.pages.dev/">Home</a></li>
+			<li><a href="https://aiplus.pages.dev/kebijakan-privasi">Kebijakan Privasi</a></li>
+			<li><a href="https://aiplus.pages.dev/disclaimer">Disclaimer</a></li>
+			<li><a href="https://aiplus.pages.dev/tentang-kami">Tentang Kami</a></li>
+		</ul>
+		</div>
+	</nav>
     <header class="w-full mt-36 mb-10 text-center" id="site-header">
         <h1 class="mx-auto relative max-w-max w-full font-bold text-5xl tracking-wider lg:text-7xl lg:tracking-widest xl:text-8xl">
             <span class="rainbow border-b-4 border-b-orange-200"><a href="/" rel="noopener noreferrer">AIPlus+</span></a>
