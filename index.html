@@ -86,12 +86,19 @@
   max-width: 100%; /* Batasi lebar judul agar sesuai dengan lebar card */
   overflow: hidden; /* Sembunyikan teks yang melebihi lebar judul */
   text-overflow: ellipsis; /* Tambahkan titik elipsis (...) untuk menandakan teks yang terpotong */
-  white-space: wrap; /* Hindari pemisahan kata secara otomatis ke baris baru */
+  white-space: nowrap; /* Hindari pemisahan kata secara otomatis ke baris baru */
+  text-align: center; /* Menengahkan posisi teks */
+}
     
     @media (max-width: 576px) {
       h1.card-title {
-        font-size: 20px;
-      }
+       font-size: 18px; /* Sesuaikan ukuran font sesuai kebutuhan */
+  max-width: 100%; /* Batasi lebar judul agar sesuai dengan lebar card */
+  overflow: hidden; /* Sembunyikan teks yang melebihi lebar judul */
+  text-overflow: ellipsis; /* Tambahkan titik elipsis (...) untuk menandakan teks yang terpotong */
+  white-space: nowrap; /* Hindari pemisahan kata secara otomatis ke baris baru */
+  text-align: center; /* Menengahkan posisi teks */
+}
     }
     
     .search-box {
