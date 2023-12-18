@@ -12,7 +12,6 @@
     "content_subcategory": "",
     "canonical": "https://aiplus.pages.dev/"
 });</script>
-<meta http-equiv="Cache-Control" content="max-age=3600, public">
 <link rel="dns-prefetch" href="//aiplus.pages.dev">
 <link rel="dns-prefetch" href="//site-assets.fontawesome.com">
 <link rel="dns-prefetch" href="//lf9-cdn-tos.bytecdntp.com">
@@ -251,11 +250,11 @@ tag.onload = function(){
           <h1 class="card-title">Google Gemini Vs GPT-4</a></h1>
 	<p class="card-text"></p>
         </div>      </div>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" defer=""></script>
   <script async src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script async src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script async src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script>
-function deferResource(url, type) {
+  function deferResource(url, type) {
   var tag;
 
   if (type === 'script') {
@@ -266,6 +265,13 @@ function deferResource(url, type) {
     tag = document.createElement('link');
     tag.href = url;
     tag.rel = 'stylesheet';
+  } else if (type === 'image') {
+    tag = document.createElement('img');
+    tag.setAttribute('data-src', url);
+    tag.classList.add('lazyload');
+    tag.style.objectFit = 'cover';
+    tag.style.width = '100%';
+    tag.style.height = '100%';
   }
 
   if (tag) {
@@ -273,13 +279,27 @@ function deferResource(url, type) {
   }
 }
 
-// Panggil fungsi deferResource untuk menunda pemuatan sumber daya
-deferResource('https://code.jquery.com/jquery-3.5.1.slim.min.js', 'script');
-deferResource('https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js', 'script');
-deferResource('https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', 'script');
-deferResource('https://aiplus.pages.dev/bootstrap.min.css', 'style');
-deferResource('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css', 'style');
-  </script>
+function detectResources() {
+  var scripts = document.querySelectorAll('script[src]');
+  var styles = document.querySelectorAll('link[rel="stylesheet"]');
+  var images = document.querySelectorAll('img');
+
+  scripts.forEach(function(script) {
+    deferResource(script.src, 'script');
+  });
+
+  styles.forEach(function(style) {
+    deferResource(style.href, 'style');
+  });
+
+  images.forEach(function(image) {
+    var src = image.getAttribute('src');
+    var newSrc = src + '?quality=50&format=webp';
+    deferResource(newSrc, 'image');
+  });
+}
+
+detectResources();
   <script>
     function search() {
       var input = document.getElementById('searchInput').value.toLowerCase();
