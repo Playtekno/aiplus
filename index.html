@@ -294,7 +294,7 @@ function detectResources() {
 
   images.forEach(function(image) {
     var src = image.getAttribute('src');
-    var newSrc = src + '?quality=50&format=webp';
+    var newSrc = src + '?quality=50&format=avif';
     deferResource(newSrc, 'image');
   });
 }
