@@ -87,6 +87,20 @@ font-family: 'Roboto', sans-serif;
   height: 250px;
   margin: 10px;
   background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+@media (max-width: 1500px) {
+  .card {
+    clear: both;
+  }
+}
+
+@media (max-width: 1100px) {
+  .card {
+    width: 100%;
+    height: auto;
+  }
 }
 .card-img-top {
 width: 100%;
@@ -245,6 +259,7 @@ tag.onload = function(){
     </div>
 <center><h1>AIPlus: Portal Berita AI Terupdate </h1></center>
     <div class="card-deck">
+	    <div class="card-container">
 <div class="card">
 	  <a href="https://aiplus.pages.dev/bard-chatbot-google-gemini" title="AI Playground v2: Lompatan Baru dalam Kreativitas">
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHjTw5sbg78ADYDXKjVSNiFyWeO8b5RspRpwPymgOfpxshNqLC7Sud8C-sY4n67oTLQaQqopaKPhluNaqVcQbfC82bRAf1DfWZ4hCJmNpcyZh_gypb_xwK7XpEDf6qbKCBCfpJpk_CMF_X17QV8JGUxgUg5ARrN56NUWkdr5-R49z5doCtM35m6cqoUKvC/s16000/bard-chatbot-google-gemini.jpg?format=.webp" width="500px" class="card-img-top" alt="AI Playground v2: Lompatan Baru dalam Kreativitas" title="AI Playground v2: Lompatan Baru dalam Kreativitas">
@@ -275,7 +290,7 @@ tag.onload = function(){
         <div class="card-body">
           <h1 class="card-title">Google Gemini Vs GPT-4: Mana Yang Lebih Baik</a></h1>
 	<p class="card-text">Temukan Gemini, model AI buatan tercanggih dari Google yang mampu menggabungkan berbagai jenis informasi dengan sempurna</p>
-        </div>      </div>
+        </div>      </div></div>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" defer=""></script>
   <script async src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script async src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
