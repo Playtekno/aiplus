@@ -1,66 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 <url>
   <loc>https://aiplus.pages.dev/</loc>
   <lastmod>2023-12-21T00:36:59+00:00</lastmod>
- <image>https://aiplus.pages.dev/aiplus.webp</image>
-    <changefreq>always</changefreq>
+  <image>https://aiplus.pages.dev/aiplus.webp</image>
+  <changefreq>always</changefreq>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://aiplus.pages.dev/news</loc>
   <lastmod>2023-12-21T00:36:59+00:00</lastmod>
- <image>https://aiplus.pages.dev/aiplus.webp</image>
+  <image>https://aiplus.pages.dev/aiplus.webp</image>
   <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aiplus.pages.dev/howto</loc>
   <lastmod>2023-12-21T00:36:59+00:00</lastmod>
- <image>https://aiplus.pages.dev/aiplus.webp</image>
-    <changefreq>always</changefreq>
+  <image>https://aiplus.pages.dev/aiplus.webp</image>
+  <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aiplus.pages.dev/kebijakan-privasi</loc>
   <lastmod>2023-12-21T00:36:59+00:00</lastmod>
- <image>https://aiplus.pages.dev/aiplus.webp</image>
-   <changefreq>always</changefreq>
+  <image>https://aiplus.pages.dev/aiplus.webp</image>
+  <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aiplus.pages.dev/disclaimer</loc>
   <lastmod>2023-12-21T00:36:59+00:00</lastmod>
- <image>https://aiplus.pages.dev/aiplus.webp</image>
-   <changefreq>always</changefreq>  
+  <image>https://aiplus.pages.dev/aiplus.webp</image>
+  <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aiplus.pages.dev/tentang-kami</loc>
   <lastmod>2023-12-21T00:36:59+00:00</lastmod>
- <image>https://aiplus.pages.dev/aiplus.webp</image>
-   <changefreq>always</changefreq>
+  <image>https://aiplus.pages.dev/aiplus.webp</image>
+  <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aiplus.pages.dev/google-gemini-vs-gpt4</loc>
   <lastmod>2023-12-21T00:36:59+00:00</lastmod>
-<image>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUdzuJq4lnc4IwZrcZTtJAFE6n4MM7KKIFfMa5T_olshhxDE-1epb0eSAUUcyaVEFq5FKvhMUpaLtHBqPVNJntKKsj65PcjN5R1cXDcBB3N2k92JWLH0CHUfdxdcNaED3EA2B52zCtAu2x7tIrXJLumGdKWyPMOxPb69Zw7GOu7OThvxsh-9ttjvrZ6ynB/s16000/google-gemini-vs-gpt4.webp</image
-<changefreq>always</changefreq>
+  <image>https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUdzuJq4lnc4IwZrcZTtJAFE6n4MM7KKIFfMa5T_olshhxDE-1epb0eSAUUcyaVEFq5FKvhMUpaLtHBqPVNJntKKsj65PcjN5R1cXDcBB3N2k92JWLH0CHUfdxdcNaED3EA2B52zCtAu2x7tIrXJLumGdKWyPMOxPb69Zw7GOu7OThvxsh-9ttjvrZ6ynB/s16000/google-gemini-vs-gpt4.webp</image>
+  <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://aiplus.pages.dev/imagen-2-ai-image-generator</loc>
   <lastmod>2023-12-21T00:36:59+00:00</lastmod>
   <image>https://aiplus.pages.dev/imagen-2-ai-image-generator.webp</image>
-   <changefreq>always</changefreq>
+  <changefreq>always</changefreq>
   <priority>0.80</priority>
 </url>
 <url>
