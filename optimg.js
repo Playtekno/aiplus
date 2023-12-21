@@ -14,8 +14,14 @@ cards.forEach((card) => {
     // Mendapatkan URL gambar asli
     const imageUrl = image.getAttribute('src');
 
+    // Mengecek apakah URL gambar berformat .avif
+    const isAvif = imageUrl.endsWith('?format=.avif');
+
+    // Mengubah format gambar menjadi .avif jika belum .avif
+    const formattedUrl = isAvif ? imageUrl : imageUrl.replace(/\.[^/.]+$/, '?format=.avif');
+
     // Menggabungkan URL prefix dengan URL gambar
-    const modifiedUrl = urlPrefix + imageUrl;
+    const modifiedUrl = urlPrefix + formattedUrl;
 
     // Mengatur URL gambar yang telah dimodifikasi
     image.setAttribute('src', modifiedUrl);
