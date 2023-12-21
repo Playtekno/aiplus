@@ -18,7 +18,7 @@ cards.forEach((card) => {
     const imageFormat = imageUrl.substring(imageUrl.lastIndexOf('.') + 1);
 
     // Menggabungkan URL prefix dengan URL gambar asli
-    const modifiedUrl = urlPrefix + imageUrl + '?format=.avif';
+    const modifiedUrl = urlPrefix + imageUrl + '.avif';
 
     // Mengatur URL gambar yang telah dimodifikasi
     image.setAttribute('src', modifiedUrl);
