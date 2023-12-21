@@ -2,7 +2,7 @@
 const cards = document.querySelectorAll('.card');
 
 // URL yang akan ditambahkan sebelum URL gambar
-const urlPrefix = 'https://res.cloudinary.com/practicaldev/image/fetch/s--BlMrNwoZ--/c_limit,f_avif,fl_progressive,q_80,h_200,w_348/';
+const urlPrefix = 'https://res.cloudinary.com/practicaldev/image/fetch/s--BlMrNwoZ--/c_limit,f_auto,fl_progressive,q_80,h_200,w_348/';
 
 // Mendapatkan tanggal, bulan, dan tahun saat ini
 const currentDate = new Date();
