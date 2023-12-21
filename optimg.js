@@ -15,10 +15,10 @@ cards.forEach((card) => {
     const imageUrl = image.getAttribute('src');
 
     // Mengecek apakah URL gambar berformat .avif
-    const isAvif = imageUrl.endsWith('.avif');
+    const isAvif = imageUrl.endsWith('.webp');
 
     // Mengubah format gambar menjadi .avif jika belum .avif
-    const formattedUrl = isAvif ? imageUrl : imageUrl.replace(/\.[^/.]+$/, '.avif');
+    const formattedUrl = isAvif ? imageUrl : imageUrl.replace(/\.[^/.]+$/, '.webp');
 
     // Menggabungkan URL prefix dengan URL gambar
     const modifiedUrl = urlPrefix + formattedUrl;
