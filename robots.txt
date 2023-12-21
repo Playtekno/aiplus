@@ -1,16 +1,3 @@
 User-agent: *
 Allow: /
-
-# File extensions
-Disallow: /*.xml 
-Disallow: /*.jpg
-Disallow: /*.webp
-Disallow: /*.png
-Disallow: /*.ico
-
-# Cache files 
-Disallow: /*.css
-Disallow: /*.js
-
-# Other 
 Sitemap: https://aiplus.pages.dev/sitemap.xml
