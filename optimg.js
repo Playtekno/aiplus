@@ -1,9 +1,6 @@
 // Mendapatkan semua elemen dengan kelas "card"
 const cards = document.querySelectorAll('.card');
 
-// URL yang akan ditambahkan sebelum URL gambar
-const urlPrefix = 'https://res.cloudinary.com/practicaldev/image/fetch/s--BlMrNwoZ--/c_limit,f_avif,fl_progressive,q_80,h_200,w_348/';
-
 // Loop melalui setiap elemen dengan kelas "card"
 cards.forEach((card) => {
   // Mendapatkan semua elemen gambar di dalam elemen card
@@ -14,14 +11,11 @@ cards.forEach((card) => {
     // Mendapatkan URL gambar asli
     const imageUrl = image.getAttribute('src');
 
-    // Mengecek apakah URL gambar berformat .avif
-    const isAvif = imageUrl.endsWith('?format=.avif');
+    // Mendapatkan format gambar
+    const imageFormat = imageUrl.substring(imageUrl.lastIndexOf('.') + 1);
 
-    // Mengubah format gambar menjadi .avif jika belum .avif
-    const formattedUrl = isAvif ? imageUrl : imageUrl.replace(/\.[^/.]+$/, '?format=.avif');
-
-    // Menggabungkan URL prefix dengan URL gambar
-    const modifiedUrl = urlPrefix + formattedUrl;
+    // Menggabungkan URL gambar asli dengan prefix "?format=.avif"
+    const modifiedUrl = imageUrl + '?format=.avif';
 
     // Mengatur URL gambar yang telah dimodifikasi
     image.setAttribute('src', modifiedUrl);
